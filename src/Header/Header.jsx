@@ -4,7 +4,7 @@ import { Breadcrumb } from "./Breadcrumb"
 
 export const Header = ({ breadcrumbItems }) => {
   return (
-    <div className="h-16 bg-white rounded-lg flex items-center justify-between px-4 mb-4">
+    <div className="h-16 bg-white rounded-lg flex items-center justify-between px-4 ">
       <Breadcrumb items={breadcrumbItems} />
 
       <div className="flex items-center gap-4">
