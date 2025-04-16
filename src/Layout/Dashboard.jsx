@@ -1,18 +1,28 @@
-import { Sidebar } from '../Sidebar/Sidebar'
-import React from 'react'
 
-const Dashboard = () => {
+
+import { useState } from "react"
+import { Sidebar } from "../Sidebar/Sidebar"
+import { Header } from "../Header/Header"
+
+
+export const Dashboard = () => {
+  // This would normally come from your router or state management
+  const [currentPath, setCurrentPath] = useState([])
+
+  // This function would be called when a sidebar item is clicked
+  const handleNavigation = (path) => {
+    setCurrentPath(path)
+  }
+
   return (
     <div className="flex h-screen bg-[#f5f7fb]">
       <div className="w-[17%]">
-        <Sidebar />
+        <Sidebar onNavigate={handleNavigation} />
       </div>
       <div className="w-[83%] flex flex-col overflow-hidden p-4">
-        {/* <Header />
-        <DashboardContent /> */}
+        <Header breadcrumbItems={currentPath} />
+        {/* <DashboardContent /> */}
       </div>
     </div>
   )
 }
-
-export default Dashboard
