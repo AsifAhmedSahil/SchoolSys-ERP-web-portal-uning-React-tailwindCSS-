@@ -24,11 +24,12 @@ export function WelcomeSection() {
         </div>
       </div>
 
-      <Tabs defaultValue="overview" className="w-full">
-        <TabsList className=" h-12 rounded-none bg-transparent w-full justify-start px-6 gap-8">
+      <Tabs defaultValue="overview" className="w-[96%] mx-auto border-b border-[#E5E5E5] ">
+        
+        <TabsList className=" h-12 rounded-none bg-transparent w-full justify-start  gap-8">
           <TabsTrigger
             value="overview"
-            className="data-[state=active]:border-b-2 data-[state=active]:border-blue-600 data-[state=active]:text-blue-600 rounded-none h-full text-[16px]"
+            className="data-[state=active]:border-b-2 data-[state=active]:border-blue-600 data-[state=active]:text-blue-600 rounded-none h-full text-[16px] "
           >
             Overview
           </TabsTrigger> 

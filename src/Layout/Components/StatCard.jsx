@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+// import arrowup from "../../assets/arrowup.svg";
 
 export const StatCard = ({
   title,
@@ -9,25 +10,25 @@ export const StatCard = ({
   showArrow,
 }) => {
   return (
-    <div className="bg-white rounded-lg ml-2 ">
-      <div className="flex justify-between items-start px-6">
+    <div className="  rounded-[12px]  w-full ">
+      <div className="flex justify-between items-start ">
 
       {icon && (
-          <div className=" relative ">
+          <div className=" relative bg-white rounded-[12px] ">
             <img
               src={icon || "/placeholder.svg"}
               alt={iconAlt || "Icon"}
-              width={100}
-              height={100}
-              className="object-contain"
+              width={300}
+              height={300}
+              className="h-[120px] w-[120px] object-contain "
             />
           </div>
         )}
 
-        <div className="my-3">
-          <div className="flex gap-3">
-          <h3 className="text-sm font-medium ">{title}</h3>
-          {showArrow && <ArrowUpRight className="h-5 w-5 text-gray-400" />}
+        <div className="my-3 ">
+          <div className="flex gap-3 wfu" >
+          <div className="text-lg font-medium w-full">{title}</div>
+          {showArrow && <ArrowUpRight className="h-10 w-10 text-gray-400" />}
           </div>
           <p className="text-3xl font-bold mt-2">{value}</p>
           {percentage && (

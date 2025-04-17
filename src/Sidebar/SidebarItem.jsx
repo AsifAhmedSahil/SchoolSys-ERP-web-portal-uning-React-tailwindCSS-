@@ -19,23 +19,23 @@ export const SidebarItem = ({ icon, title, children, expanded = false, onClick =
   const getIcon = () => {
     switch (icon) {
       case "office":
-        return <Building className="h-5 w-5" />
+        return <Building className="h-4 w-4" />
       case "admission":
-        return <BookOpen className="h-5 w-5" />
+        return <BookOpen className="h-4 w-4" />
       case "student":
-        return <Users className="h-5 w-5" />
+        return <Users className="h-4 w-4" />
       case "academic":
-        return <BookMarked className="h-5 w-5" />
+        return <BookMarked className="h-4 w-4" />
       case "department":
-        return <Building className="h-5 w-5" />
+        return <Building className="h-4 w-4" />
       case "performance":
-        return <BarChart2 className="h-5 w-5" />
+        return <BarChart2 className="h-4 w-4" />
       case "progress":
-        return <LineChart className="h-5 w-5" />
+        return <LineChart className="h-4 w-4" />
       case "exam":
-        return <Award className="h-5 w-5" />
+        return <Award className="h-4 w-4" />
       default:
-        return <BookOpen className="h-5 w-5" />
+        return <BookOpen className="h-4 w-4" />
     }
   }
 
@@ -49,8 +49,8 @@ export const SidebarItem = ({ icon, title, children, expanded = false, onClick =
 
   return (
     <div className="bg-[#ECEFF3]">
-      <div className="flex items-center justify-between p-4 hover:bg-gray-100 cursor-pointer " onClick={handleClick}>
-        <div className="flex items-center gap-3">
+      <div className="flex items-center justify-between p-2 hover:bg-gray-100 cursor-pointer " onClick={handleClick}>
+        <div className="flex items-center gap-2 ">
           {getIcon()}
           <span className="text-sm font-medium">{title}</span>
         </div>

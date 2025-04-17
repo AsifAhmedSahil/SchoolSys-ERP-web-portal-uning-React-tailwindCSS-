@@ -15,11 +15,11 @@ export const Dashboard = () => {
   
 
   return (
-    <div className="flex h-screen bg-[#ECEFF3]">
-      <div className="w-[17%]">
+    <div className="flex h-screen bg-[#ECEFF3]  ">
+      <div className="w-[15%]">
         <Sidebar onNavigate={handleNavigation} />
       </div>
-      <div className="w-[83%] flex flex-col overflow-hidden p-4 h-[95%] rounded-2xl shadow-lg border border-gray-300 bg-white m-4 ">
+      <div className="w-[85%] flex flex-col overflow-hidden p-4 h-[96%] rounded-2xl shadow-lg border border-gray-300 bg-white m-4 ">
         <Header breadcrumbItems={currentPath} />
         <DashboardContent />
       </div>

@@ -20,24 +20,24 @@ export const NoticeBoard = () => {
   ]
 
   return (
-    <div className="bg-white rounded-lg p-4">
+    <div className="bg-white rounded-lg px-4 py-7 border-1 border-gray-300  mx-6 ">
       <div className="flex justify-between items-center mb-4">
-        <h3 className="font-medium">Notice Board</h3>
         <div className="flex items-center gap-2">
+        <h3 className="font-medium">Notice Board</h3>
           <button>
             <ArrowUpRight className="h-4 w-4 text-gray-500" />
           </button>
+        </div>
           <button className="flex items-center gap-1 text-sm text-gray-500">
             <Filter className="h-4 w-4" />
             <span>Filter</span>
           </button>
-        </div>
       </div>
 
       <div className="space-y-4">
         {notices.map((notice) => (
           <div key={notice.id} className="flex gap-4">
-            <div className="flex flex-col items-center">
+            <div className="w-16 flex flex-col items-center">
               <div className="text-lg font-bold">{notice.date.day}</div>
               <div className="text-xs font-medium bg-gray-100 px-2 py-1 rounded">{notice.date.month}</div>
             </div>

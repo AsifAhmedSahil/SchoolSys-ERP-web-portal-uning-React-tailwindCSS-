@@ -104,8 +104,8 @@ import {
    
   export const ClassChart = () => {
     return (
-      <div className=" p-4 border-1 border-gray-300 rounded-lg mx-6 ">
-        <div className="flex justify-between mb-2">
+      <div className=" px-4 py-5 border-1 border-gray-300 rounded-lg mx-6 ">
+        <div className="flex justify-between ">
             <div className="font-semibold text-[18px]">Student By Class</div>
             <div className="flex justify-center items-center gap-2 cursor-pointer"> <img className="w-3 h-3" src={Filter} alt="filter" /> <span className="text-[16px] text-[#565656]">Campus</span></div>
         </div>

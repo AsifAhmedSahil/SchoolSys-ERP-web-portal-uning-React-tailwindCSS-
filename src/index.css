@@ -1,1 +1,53 @@
+/* @font-face {
+    font-family: Centro;
+    src: url("../public/fonts/CentraNo1/CentraNo1-Light.ttf");
+}
+
+
 @import "tailwindcss";
+
+@theme{
+    --font-centro: Centro,"sans-serif"
+}
+
+body {
+    font-family: "Centro",sans-serif;
+    font-weight: 300;
+} */
+
+/* 1. Font Face Definitions */
+
+@import "tailwindcss";
+
+@theme{
+    --font-centro: Centro,"sans-serif"
+}
+@font-face {
+    font-family: 'Centro';
+    src: url('../public/fonts/CentraNo1/CentraNo1-Light.ttf') format('truetype');
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'Centro';
+    src: url('../public/fonts/CentraNo1/CentraNo1-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: 'Centro';
+    src: url('../public/fonts/CentraNo1/CentraNo1-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+  
+  /* 2. Global Styles */
+  body {
+    font-family: 'Centro', sans-serif;
+    font-weight: 300; /* Light by default */
+  }
+  
+  /* 3. Optional Utility Class (if you want) */
+  .font-centro {
+    font-family: 'Centro', sans-serif;
+  }
+  
