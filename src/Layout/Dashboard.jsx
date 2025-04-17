@@ -19,7 +19,7 @@ export const Dashboard = () => {
       <div className="w-[17%]">
         <Sidebar onNavigate={handleNavigation} />
       </div>
-      <div className="w-[83%] flex flex-col overflow-hidden p-4 h-[95%] rounded-lg shadow-lg bg-white m-4 ">
+      <div className="w-[83%] flex flex-col overflow-hidden p-4 h-[95%] rounded-2xl shadow-lg border border-gray-300 bg-white m-4 ">
         <Header breadcrumbItems={currentPath} />
         <DashboardContent />
       </div>

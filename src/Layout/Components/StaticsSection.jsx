@@ -1,4 +1,5 @@
 import { StatCard } from "./StatCard"
+import StudentIcon from "../../assets/student.svg"
 
 export const StatisticsSection = () => {
   // Array of statistics data
@@ -7,7 +8,7 @@ export const StatisticsSection = () => {
       id: 1,
       title: "Total Student",
       value: "576",
-      icon: "/placeholder.svg?height=60&width=60",
+      icon: StudentIcon,
       iconAlt: "Student icon",
       showArrow: true,
     },
@@ -38,7 +39,7 @@ export const StatisticsSection = () => {
   ]
 
   return (
-    <div className="grid grid-cols-5 gap-4 m-6 pl-6  bg-white border-1 border-gray-400 rounded-lg">
+    <div className="grid grid-cols-5 gap-4 m-6  bg-white border-1 border-gray-300 rounded-lg">
       {statistics.map((stat) => (
         <StatCard
           key={stat.id}

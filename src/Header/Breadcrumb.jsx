@@ -1,11 +1,12 @@
 import { ChevronRight, Folder, FileText } from "lucide-react"
+import DashboardFolder from "../assets/dashboardFolder.svg"
 
 export const Breadcrumb = ({ items = [] }) => {
   
   if (items.length === 0) {
     return (
       <div className="flex items-center gap-2">
-        <Folder className="h-5 w-5 text-gray-500" />
+        <img src={DashboardFolder} className="h-5 w-5 text-gray-500" />
         <span className="text-gray-700">Dashboard</span>
       </div>
     )

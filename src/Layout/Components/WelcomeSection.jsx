@@ -28,31 +28,31 @@ export function WelcomeSection() {
         <TabsList className=" h-12 rounded-none bg-transparent w-full justify-start px-6 gap-8">
           <TabsTrigger
             value="overview"
-            className="data-[state=active]:border-b-2 data-[state=active]:border-blue-600 data-[state=active]:text-blue-600 rounded-none h-full"
+            className="data-[state=active]:border-b-2 data-[state=active]:border-blue-600 data-[state=active]:text-blue-600 rounded-none h-full text-[16px]"
           >
             Overview
           </TabsTrigger> 
           <TabsTrigger
             value="academic"
-            className="data-[state=active]:border-b-2 data-[state=active]:border-blue-600 data-[state=active]:text-blue-600 rounded-none h-full"
+            className="data-[state=active]:border-b-2 data-[state=active]:border-blue-600 data-[state=active]:text-blue-600 rounded-none h-full text-[16px]"
           >
             Academic
           </TabsTrigger>
           <TabsTrigger
             value="accounts"
-            className="data-[state=active]:border-b-2 data-[state=active]:border-blue-600 data-[state=active]:text-blue-600 rounded-none h-full"
+            className="data-[state=active]:border-b-2 data-[state=active]:border-blue-600 data-[state=active]:text-blue-600 rounded-none h-full text-[16px]"
           >
             Accounts
           </TabsTrigger>
           <TabsTrigger
             value="store"
-            className="data-[state=active]:border-b-2 data-[state=active]:border-blue-600 data-[state=active]:text-blue-600 rounded-none h-full"
+            className="data-[state=active]:border-b-2 data-[state=active]:border-blue-600 data-[state=active]:text-blue-600 rounded-none h-full text-[16px]"
           >
             Store
           </TabsTrigger>
           <TabsTrigger
             value="hris"
-            className="data-[state=active]:border-b-2 data-[state=active]:border-blue-600 data-[state=active]:text-blue-600 rounded-none h-full"
+            className="data-[state=active]:border-b-2 data-[state=active]:border-blue-600 data-[state=active]:text-blue-600 rounded-none h-full text-[16px]"
           >
             HRIS
           </TabsTrigger>
