@@ -1,5 +1,6 @@
 
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import dashboardImage from "../../assets/dashboard.png"
 
 export function WelcomeSection() {
   return (
@@ -11,15 +12,15 @@ export function WelcomeSection() {
             <h2 className="text-2xl font-semibold">Al-Hidaayah International School</h2>
             <p className="text-gray-500 mt-4 text-lg">Here's whats happening with your school today!</p>
           </div>
-          {/* <div className="relative w-[300px] h-[100px]">
-            <Image
-              src="/placeholder.svg?height=100&width=300"
+          <div className="relative w-[600px] h-[100px] ">
+            <img
+              src={dashboardImage}
               alt="School illustration"
-              width={300}
-              height={100}
+              width={600}
+              height={500}
               className="object-contain"
             />
-          </div> */}
+          </div>
         </div>
       </div>
 

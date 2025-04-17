@@ -1,0 +1,33 @@
+/* CustomButton.css */
+
+/* Default (deep blue) */
+.button-52 {
+    padding: 12px 26px;
+    border: 0;
+    font-size: 16px;
+    transition: all 150ms ease-in-out;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(rgba(255, 255, 255, .05) 0, transparent 100%),
+                linear-gradient(0deg, #0057B9 0%, #0057B9 100%);
+    box-shadow: 0 0 0 1px #004896,
+                rgba(255, 255, 255, 0.3) 0 1px 1px 0 inset,
+                rgba(0, 0, 0, 0.5) 0 1px 2px 0,
+                rgba(0, 0, 0, 0.4) 0 -1px 2px 0 inset,
+                0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* Hover effect */
+  .button-52:hover {
+    filter: brightness(1.1);
+  }
+  
+  /* Active (light blue) - the selected one */
+  .button-active {
+    background: linear-gradient(rgba(255, 255, 255, .05) 0, transparent 100%),
+                linear-gradient(0deg, #3A7FCA 0%, #3A7FCA 100%);
+    box-shadow: 0 0 0 2px #2c6da6 inset;
+  }
+  

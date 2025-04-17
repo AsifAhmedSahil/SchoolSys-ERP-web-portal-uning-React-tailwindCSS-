@@ -1,21 +1,23 @@
 import { SidebarItem } from "./SidebarItem";
 import { SidebarSubItem } from "./SidebarSubItem";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo (2).svg";
 import { useState } from "react";
 import { SidebarItemMain } from "./SidebarItemMain";
+import CustomButton from "../components/ui/CustomButton";
 
 export const Sidebar = ({ onNavigate = () => {} }) => {
   const [openGroups, setOpenGroups] = useState({});
+  const [activePage, setActivePage] = useState("Dashboard");
 
   const toggleGroup = (key) => {
     setOpenGroups((prev) => ({ ...prev, [key]: !prev[key] }));
   };
-  // Helper function to create navigation path
+
   const navigate = (parent, child = null) => {
+    const pageTitle = child || parent;
+    setActivePage(pageTitle);
     const path = [{ title: parent }];
-    if (child) {
-      path.push({ title: child, active: true });
-    }
+    if (child) path.push({ title: child, active: true });
     onNavigate(path);
   };
 
@@ -82,7 +84,7 @@ export const Sidebar = ({ onNavigate = () => {} }) => {
   ];
 
   return (
-    <div className="w-full  flex flex-col h-full bg-[#ECEFF3]">
+    <div className="w-full  flex flex-col h-full bg-[#ECEFF3] p-2">
       <div className="p-4  flex items-center gap-2 ">
         <img src={logo} alt="SchoolSys Logo" className="w-50 object-contain" />
       </div>
@@ -95,12 +97,16 @@ export const Sidebar = ({ onNavigate = () => {} }) => {
         }}
       >
         <div className="mx-3 my-3">
-          <button
-            className="w-full bg-[#0055cc] text-white py-3 rounded-md font-medium"
-            onClick={() => onNavigate([])} // Empty array for dashboard
-          >
-            Dashboard
-          </button>
+         
+          <CustomButton
+            label="Dashboard"
+            onClick={() => {
+              setActivePage("Dashboard");
+              onNavigate([]);
+            }}
+            className="w-full mb-2"
+            active={activePage === "Dashboard"}
+          />
         </div>
 
         {sidebarConfig.map((item) => {
